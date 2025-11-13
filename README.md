@@ -11,3 +11,9 @@ $ cd ./src
 $ terraform init
 $ terraform apply
 ```
+
+Use env vars to customize the behaviour
+
+```bash
+terraform apply -var region=eu-west-1 -var create_iam_role=true
+``` 

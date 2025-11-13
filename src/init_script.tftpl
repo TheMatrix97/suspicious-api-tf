@@ -20,4 +20,4 @@ sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 # Run container suspicious API
 
-sudo docker run -d --restart always -p 80:3000 markittos1/susapi:latest
+sudo docker run -d --restart always -e REGION=${REGION} -e AMI=${AMI} -p 80:3000 markittos1/susapi:latest
